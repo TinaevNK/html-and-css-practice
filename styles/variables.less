@@ -8,9 +8,31 @@
 @column-padding-m: 15px;
 @column-padding-l: 15px;
 
-@screen-gt-s: ~'(min-width: 768px)';
-@screen-gt-m: ~'(min-width: 1000px)';
+@grey: #eee;
+@text-grey: #999;
+@border-grey: #666;
+@black: #212122;
 
-@screen-only-s: ~'(max-width: 767px)';
-@screen-only-m: ~'(min-width: 768px) and (max-width: 999px)';
-@screen-only-l: ~'(min-width: 1000px)';
+// миксин для сбора стилей списка
+.list() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// миксин для затемнения при наведении
+.hover-opacity() {
+  transition: opacity 0.15s linear;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+@screen-gt-xs: ~"(min-width: 400px)";
+@screen-gt-s: ~"(min-width: 768px)";
+@screen-gt-m: ~"(min-width: 1000px)";
+
+@screen-only-s: ~"(max-width: 767px)";
+@screen-only-m: ~"(min-width: 768px) and (max-width: 999px)";
+@screen-only-l: ~"(min-width: 1000px)";

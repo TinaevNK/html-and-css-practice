@@ -41,13 +41,13 @@
   }
 
   &__social {
-    .list;
+    .list();
     display: flex;
     gap: 16px;
   }
 
   &__store-list {
-    .list;
+    .list();
     display: flex;
     gap: 8px;
 
@@ -67,7 +67,7 @@
       display: block;
       width: 46px;
       height: 46px;
-      .hover-opacity;
+      .hover-opacity();
     }
   }
 }
@@ -77,7 +77,7 @@
   width: 36px;
   height: 36px;
 
-  .hover-opacity;
+  .hover-opacity();
 
   each(@social, {
     &_@{value} {
@@ -91,7 +91,7 @@
   width: 140px;
   height: 40px;
 
-  .hover-opacity;
+  .hover-opacity();
 
   each(@app, {
     &_@{value} {
